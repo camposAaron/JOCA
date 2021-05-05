@@ -5,25 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>JOCA construcciones</title>
-
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!--Cabecera-->
-    <header id="header" style="border: 1px solid black;">
+    <div id="Main-container">
+    <header id="header">
         <div>
             <img src="./assets/img/Home/Header/logo + nombre.png">
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="Proyectos.html">Proyectos</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Contactanos</a></li>
+            <ul id="menu">
+                <li>
+                    <a href="#">Inicio</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li>
+                    <a href="Proyectos.html">Proyectos</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li>
+                    <a href="#">Testimonios</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li>
+                    <a href="#">Contactanos</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                
             </ul>
         </nav>
     </header>
@@ -31,18 +52,18 @@
 
     <!--Cuerpo de Pagina-->
     <section>
-
         <!--Hero Image: cambiar imagen con slider(js) -->
-        <div id="hero-image" style="border: 1px solid black;">
-            <img id="back" src="assets/img/Home/HERO IMG/desktop.png">
+        <div id="hero-image" styles="border: 1px solid black;">
             <div id="hero-inside">
                 <img id="logo" src="assets/img/Home/Header/LOGO.png">
-                <h1>JOCA CONSTRUCCIONES</h1>
-                <P>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eum eos porro dolores placeat
-                    nihil vitae quia! Dolores facilis accusamus, ea molestias, vel aspernatur nobis cupiditate
-                    similique, culpa nemo voluptatem?
-                </P>
+                <div>
+                    <h1>JOCA CONSTRUCCIONES</h1>
+                    <P>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eum eos porro dolores placeat
+                        nihil vitae quia! Dolores facilis accusamus, ea molestias, vel aspernatur nobis cupiditate
+                        similique, culpa nemo voluptatem?
+                    </P>
+                </div> 
             </div>
         </div>
         <!--Fin Hero Image-->
@@ -224,6 +245,7 @@
             &copy;Copyright 2021 designed by Josué Campos
         </div>
     </footer>
+</div>
 </body>
 
 </html>

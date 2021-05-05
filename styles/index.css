@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Fuentes*/
+
+/*Cabecera*/
+
+#header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #C2C2C2 0%, #D8D8D8 100%);
+}
+
+#header div{
+    height: 100%;
+    overflow: hidden;
+}
+
+#header div img{
+    cursor: pointer;
+}
+
+
+#header nav{
+    height: 100%;
+    flex-basis: 45%;
+    margin-left: auto;
+}
+
+#menu{
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-right: 60px;
+}
+
+#menu li{
+    display: flex;
+    flex-flow: column ;
+    height: 50%;
+}
+
+#menu  li a{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(22, 25, 62, 0.9);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration:  none;
+    transition: all 300ms;
+}
+
+.animate-countrol{
+    margin-top: 4px;
+    background-color: #C6B2DF;
+    max-height: 4px;
+    width: 0%;
+    transition: all 300ms;
+}
+
+#menu li a:hover{
+    font-weight: bold;
+    transform: scale(1.1,1.1);
+}
+
+#menu li a:hover ~ .animate-countrol{
+    width: 100%;
+}
+
+/*Hero Image*/
+#hero-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("../assets/img/Home/HERO IMG/desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+#hero-inside{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Montserrat';
+}
+
+#hero-inside #logo{
+    margin: 0px auto;
+    width: 200px;
+    height: 220px;
+
+}
+
+#hero-inside div h1{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#hero-inside div p{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
