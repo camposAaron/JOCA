@@ -4,8 +4,6 @@
 }
 
 
-/*Fuentes*/
-
 /*Cabecera*/
 
 #header{
@@ -28,8 +26,9 @@
 
 #header nav{
     height: 100%;
-    flex-basis: 45%;
+    flex-basis: 50%;
     margin-left: auto;
+
 }
 
 #menu{
@@ -70,7 +69,6 @@
 
 #menu li a:hover{
     font-weight: bold;
-    transform: scale(1.1,1.1);
 }
 
 #menu li a:hover ~ .animate-countrol{
@@ -95,7 +93,7 @@
     flex-direction: column;
     width: 50%;
     padding: 10px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 #hero-inside #logo{
@@ -106,17 +104,302 @@
 }
 
 #hero-inside div h1{
-    color: white;
+    color: #E8E8E8;
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
 }
 
 #hero-inside div p{
-    color: white;
+    color: #E8E8E8;
     font-weight: 400;
     font-size: 18px;
     margin-top: 10px;
     text-align: center;
 }
+
+
+/*Servicios*/
+#services{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.title{
+     display: flex;
+     flex-flow: column nowrap;
+     width: 50%;
+     text-align: center;
+     margin: 0px auto;
+     margin-top: 40px;
+}
+
+.title h1{
+    color: rgba(22, 25, 62, 0.9);
+    font-size: 32px;
+}
+
+.title p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ #service-layout{
+   display: flex;
+   width: 90%;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0px auto;
+   margin-top: 70px;
+ }
+
+.service-card{
+     display: flex;
+     flex-direction: column;
+     height: 310px;
+     width: 340px;
+     justify-content: flex-start;
+     align-items: center;
+     background: linear-gradient(180deg, #FFFFFF 0%, #E8E8E8 100%);
+     border-radius: 18px;
+     padding: 10px;
+     box-sizing: content-box;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+ }
+
+ .service-card img{
+     justify-self: flex-start;
+     width: 79px;
+     height: 79px;
+     margin-top: 30px;
+ }
+
+ .service-card h3{
+     color:rgba(52, 56, 111, 1); 
+     text-align: center;
+     margin-top: 15px;
+ }
+
+ .service-card p{
+    text-align: center;
+    margin-top: 10px;
+ }
+
+ /*Testimonios*/
+
+ #testimony{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #CED7E7;
+    font-family: 'Montserrat',sans-serif;
+ }
+
+ /*botones del carrusel*/
+ .carrousel-btn{
+     display: flex;
+     position: absolute;
+     min-width: 500px;  
+ }
+
+.carrousel-btn button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.carrousel-btn button:nth-child(2){
+    margin-left: auto;
+}
+
+
+/*cartas de los testimonios*/
+#testimony-layout{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.testimony-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.testimony-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 999px;
+}
+
+.testimony-card p{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimony-card h3{
+    margin-top: 10px;
+   text-align: center;
+   color: rgba(52, 56, 111, 1);
+}
+
+
+/*pie de pagina*/
+footer{
+    width: 100%;
+    background: rgba(22, 25, 62, 0.9);
+    height: calc(100vh - 60px);
+}
+
+
+footer #footer-layout{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+    padding: 30px;
+    height: 90%;
+}
+
+#contact-layout{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+}
+
+#contact-layout h1{
+    color: #E8E8E8;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+#contact-form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#contact-form{
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    text-align: center;
+    width: 100%;
+    padding-left:10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+#contact-form  input[type="text"],
+#contact-form  input[type="email"]{
+    width: 47%;
+    height: 40px;
+    background: #FFFFFF;
+    color: #34386F;
+    border: 1px solid #929292;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+
+#contact-form  input[type="text"]:focus,
+#contact-form  input[type="email"]:focus,
+textarea:focus
+{
+    outline: none;
+}
+
+#contact-form textarea{
+    width: 95%;
+    margin-left: 10px;
+    color:#34386F;
+    border-radius: 8px;
+    border: 1px solid #929292;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 40%;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+
+#contact-form input::placeholder,
+textarea::placeholder
+{
+    font-family: 'Montserrat', sans-serif;
+    color: #34386F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#contact-form input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    background: #22BA8E;
+    margin: 0px auto;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#contact-form input[type="submit"]:hover{
+    background: #42c49f;
+}
+
+#contact-form input[type="submit"]:active{
+    box-shadow: 0px 0px 8px #34386F inset;
+}
+
+
+#where-layout{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#where-sublayout{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
 
