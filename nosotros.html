@@ -6,33 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOCA construcciones</title>
+    <link rel="stylesheet" type="text/css" href="styles/about.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <!--Cabecera-->
-    <header id="header" style="border: 1px solid black;">
-        <div>
-            <img src="./assets/img/Home/Header/logo + nombre.png">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="Main-container">
+
+        <header id="header">
+            <div>
+                <img src="./assets/img/Home/Header/logo + nombre.png">
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li>
+                        <a href="#">Servicios</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li>
+                        <a href="Proyectos.html">Proyectos</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li>
+                        <a href="#">Testimonios</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li>
+                        <a href="#">Contactanos</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
     <!--Fin Cabecera-->
 
     <!--Cuerpo de Pagina-->
-    <section>
-        <div class="wave">
-            <img src="assets/img/Nosotros/banner.png" alt="banner">
-        </div>
+    <section id="about_page">
+            <img id="wave"src="assets/img/Nosotros/banner.png" alt="banner">
+    
 
         <div id="about-layout">
             <div class="about-row">
@@ -84,59 +110,59 @@
     <!--fin cuerpo-->
 
 
-    <footer style="border: 1px solid black;">
+    
+    <footer>
         <section id="footer-layout">
             <!--Formulario de contacto-->
-            <div id="contact-layout" style="border: 1px solid black;">
-                <h1>Escribenos</h1>
+            <div id="contact-layout">
+                <h1 class="footer-title">Escríbenos</h1>
                 <form id="contact-form" method="POST">
-                    <div>
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido"><br>
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Numero"><br>
-                        <textarea placeholder="Escribenos un comentario(Opcional)">
-                        </textarea><br>
-                        <input type="submit" value="Enviar">
-                    </div>
+
+                    <input type="text" maxlength="30" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido"><br>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Numero"><br>
+                    <textarea placeholder="Escribe un comentario(opcional)">
+                        </textarea>
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
             <!--Fin formulario de contacto-->
 
             <!--Donde estamos-->
-            <div id="where-layout" style="border: 1px solid black;">
-                <h1>¿Dondé Estamos?</h1>
+            <div id="where-layout">
+                <h1 class="footer-title">¿Dónde Estamos?</h1>
+
                 <div id="where-sublayout">
-                    <div id="info" style="border: 1px solid black;">
+                    <div id="info">
                         <div id="social">
                             <span><img src="assets/img/contactanos/facebook.png"></span>
                             <span><img src="assets/img/contactanos/Whatsapp.png"></span>
                         </div>
-                        <div id="info-details">
-                            <div>
-                                <span><strong>Direccion</strong></span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odit
-                                    maiores<br>
-                                    illum veniam quis ullam, necessitatibus ex exercitationem. Id dignissimos autem
-                                </p>
-                            </div>
 
-                            <div>
-                                <span><strong>Telf</strong></span>
-                                <p>
-                                    +505 22534103
-                                </p>
-                            </div>
+                        <div class="info-detail">
+                            <span><strong>Dirección</strong></span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odit
+                                maiores.
+                            </p>
+                        </div>
 
-                            <div>
-                                <span><strong>Email</strong></span>
-                                <p>
-                                    joca_sa@joca.com.ni
-                                </p>
-                            </div>
+                        <div class="info-detail">
+                            <span><strong>Telf</strong></span>
+                            <p>
+                                +505 22534103
+                            </p>
+                        </div>
+
+                        <div class="info-detail">
+                            <span><strong>Email</strong></span>
+                            <p>
+                                joca_sa@joca.com.ni
+                            </p>
                         </div>
                     </div>
+
 
                     <div id="map">
                         <iframe
@@ -148,10 +174,11 @@
             </div>
         </section>
         <hr>
-        <div>
+        <div id="copy">
             &copy;Copyright 2021 designed by Josué Campos
         </div>
     </footer>
+</div>
 </body>
 
 </html>

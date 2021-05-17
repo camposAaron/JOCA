@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#abou_page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#about_page #wave {
+    width: 100%;
+}
