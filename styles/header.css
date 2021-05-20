@@ -46,7 +46,7 @@
 
 #menu  li a{
     font-family: 'Montserrat', sans-serif;
-    color: rgba(22, 25, 62, 0.9);
+    color: #555;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -63,7 +63,7 @@
 }
 
 #menu li a:hover{
-    font-weight: bold;
+    color: rgba(22, 25, 62, 0.9);
 }
 
 #menu li a:hover ~ .animate-countrol{

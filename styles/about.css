@@ -12,3 +12,51 @@
 #about_page #wave {
     width: 100%;
 }
+
+#about-layout{
+    display: flex;
+    flex-flow: column  wrap;
+    width: 100%;
+    margin: 0px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.about-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.about-desc{
+    width: 40%;
+    height: auto;
+}
+
+.about-desc h1{
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba(52, 56, 111, 1);
+    margin-bottom: 20px;
+}
+
+.about-desc p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.about-row:first-child{
+    margin-top: 0px;
+}
+
+.about-row:last-child{
+    margin-bottom: 50px;
+}
+.about-row:nth-child(2) .about-desc{
+    order : 1;
+}
+
+.about-row:nth-child(2) img{
+    order : 2;
+}
