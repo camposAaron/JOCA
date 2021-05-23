@@ -1,13 +1,19 @@
 
+
 /*Cabecera*/
 
 #header{
     display: flex;
+    position: fixed;
     flex-flow: row wrap;
     width: 100%;
     height: 60px;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #C2C2C2 0%, #D8D8D8 100%);
+    transition: all 300ms;
+    z-index: 999;
 }
+
+
 
 #header div{
     height: 100%;

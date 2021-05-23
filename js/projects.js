@@ -1,9 +1,14 @@
 window.addEventListener('load',()=>{
     var cards = document.querySelectorAll('.project-card')
-    console.log(cards)
+    let header = document.querySelector('#header')
+    header.classList.add('fixed')
+   
+    
+    
+
+
 
     cards.forEach((card, id) => {
-
         card.addEventListener('mouseover', (value) => {
             let projectType = card.children[0]
             projectType.style.transition = 'all 400ms'
@@ -32,7 +37,7 @@ window.addEventListener('load',()=>{
 
         })
     })
-
+    
 })
    
 
