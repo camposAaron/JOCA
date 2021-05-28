@@ -135,22 +135,29 @@
     font-family: 'Montserrat',sans-serif;
  }
 
-/*cartas de los testimonios*/
-#testimony-layout{
+ #testimony-layout{
     display: flex;
     flex-direction: row;
     width: 90%;
     margin: 0px auto;
     margin-top: 60px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+
+/*cartas de los testimonios*/
 
 .testimony-card{
     display: flex;
+    width: 28%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    background: rgba( 244, 238, 238, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 18px;
 }
 
 .testimony-card img{

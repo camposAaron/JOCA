@@ -9,6 +9,14 @@ window.addEventListener('load',()=>{
 
 
     cards.forEach((card, id) => {
+        
+        card.addEventListener('click', (e)=>{
+            let selectedCardId = e.currentTarget.getAttribute('id');
+            localStorage.setItem('id',selectedCardId)
+            console.log(selectedCardId)
+        })
+        
+        /*Efectos de hover */
         card.addEventListener('mouseover', (value) => {
             let projectType = card.children[0]
             projectType.style.transition = 'all 400ms'
