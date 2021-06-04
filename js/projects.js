@@ -14,6 +14,7 @@ window.addEventListener('load',()=>{
             let selectedCardId = e.currentTarget.getAttribute('id');
             localStorage.setItem('id',selectedCardId)
             console.log(selectedCardId)
+            window.location.href = "detalle-proyecto.html"
         })
         
         /*Efectos de hover */
