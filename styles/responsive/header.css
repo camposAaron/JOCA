@@ -1,0 +1,43 @@
+@media(max-width : 1200px){
+
+    #header nav{
+        flex-basis: 55%;
+    }
+
+    #menu  li a{ 
+        font-size: 14px;
+    }
+    
+}
+
+@media(max-width : 992px){
+
+    #header nav{
+        flex-basis: 60%;
+    
+    }
+
+    #menu  li a{
+        font-size: 14px;
+    }
+    
+}
+
+@media(max-width : 768px){
+
+    #header nav{
+        flex-basis: 60%;
+    
+    }
+
+    #menu  li a{
+        font-size: 14px;
+    }
+
+    #pull{
+        display: block;
+    }
+    
+}
+
+
