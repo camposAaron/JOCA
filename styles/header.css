@@ -31,16 +31,6 @@
     margin-left: auto;
 }
 
-#pull{
-    display: none;
-    font-size: 30px;
-}
-
-#pull:active{
-    color: purple;
-}
-
-
 #menu{
     display: flex;
     position: relative;
@@ -50,7 +40,7 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 #menu li{
@@ -83,4 +73,15 @@
 
 #menu li a:hover ~ .animate-countrol{
     width: 100%;
+}
+
+
+#pull{
+    display: none;
+    font-size: 30px;
+    margin-left: auto;
+}
+
+#pull:active{
+    color: purple;
 }
