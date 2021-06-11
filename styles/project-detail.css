@@ -26,6 +26,7 @@ html{
 }
 
 
+
 #project-name h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
@@ -113,7 +114,8 @@ html{
 #paginator{
     display: flex;
     flex-direction: row;
-    width: 30%;
+    justify-content: space-around;
+    width: 15%;
     margin: 0px auto;
 }
 

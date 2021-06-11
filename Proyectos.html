@@ -145,14 +145,14 @@
             <!--Formulario de contacto-->
             <div id="contact-layout">
                 <h1 class="footer-title">Escríbenos</h1>
-                <form id="contact-form" method="POST">
+                <form id="contact-form" method="POST" onsubmit="">
 
-                    <input type="text" maxlength="30" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido"><br>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Numero"><br>
-                    <textarea placeholder="Escribe un comentario(opcional)">
-                    </textarea>
+                    <input type="text" maxlength="30" placeholder="Nombre" required pattern="[a-zA-Z ]{2,25}">
+                    <input type="text" placeholder="Apellido" required pattern="[a-zA-Z ]{2,25}"><br>
+                    <input type="email" placeholder="Email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"  oninvalid="setCustomValidity('Inserte su email')">
+                    <input type="text" placeholder="Numero" required pattern = "[0-9]{8}" oninvalid="setCustomValidity('Inserte un numero Valido')"><br>
+                    <textarea placeholder="Escribe un comentario(opcional)"></textarea>
+                          
                     <input type="submit" value="Enviar">
                 </form>
             </div>

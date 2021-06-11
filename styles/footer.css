@@ -86,7 +86,11 @@ textarea:focus
     box-sizing: border-box;
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
+    overflow: scroll;
+    resize: none;
 }
+
+
 
 #contact-form input::placeholder,
 textarea::placeholder

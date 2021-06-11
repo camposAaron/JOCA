@@ -7,19 +7,18 @@ window.addEventListener('load', (e)=>{
     loadData(id);
 
      left.addEventListener('click',()=>{
-         loadData(id-2)
-    
+        localStorage.setItem('id', --id)
+        loadData(localStorage.getItem('id'))
      })
 
      right.addEventListener('click',()=>{
-       loadData(id)
+        localStorage.setItem('id', ++id)
+        loadData(localStorage.getItem('id'))
      })
 
 
 
 })
-
-
 
 
 const loadData = (id) =>{
@@ -38,19 +37,26 @@ const loadData = (id) =>{
         val.setAttribute('src', projects[id-1].img[key])
     })
 
-    /*Actualizando el paginator */
-    // try{
-    //     let ant = document.querySelector('#left')
-    //     if(projects[id-1].name === 'Modelo Comfort'){
-    //         ant.style.opacity = '0.2'
-    // //     }else{
-    // //         ant.style.opacity = '1'
-    // //         ant.innerHTML = `${projects[id-2].name}`
-    // //     } 
-          
-    //     document.querySelector('#next').innerHTML = `${projects[id].name}`
-    // }catch(e){
-    //     console.log(e)
-    // }
-    
+      /*Actualizando el paginator */
+      let ant = document.querySelector('#left')
+      let sig =  document.querySelector('#right')
+      let ans  = document.querySelector('#ans')
+      let next  = document.querySelector('#next')
+      console.log(projects.length)
+ 
+      if(id-2 < 0){
+          ans.innerHTML = ''
+          ant.style.opacity = '0.2'
+      }else{
+          ans.innerHTML = `${projects[id-2].name}`
+          ant.style.opacity = '1'
+      }
+ 
+      if(id > projects.length-1){
+          next.innerHTML = ''
+          sig.style.opacity = '0.2'
+      }else{
+          next.innerHTML = `${projects[id].name}`
+          sig.style.opacity = '1'
+      }
 }
