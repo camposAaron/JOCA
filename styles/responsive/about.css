@@ -3,7 +3,6 @@
         padding-top: 0px;
     }
 
-
     .about-desc{
         width: 80%;
         margin-top: 20px;
@@ -21,7 +20,6 @@
     .about-desc h1 {
         font-size: 28px;
     }
-
 }
 
 @media(max-width: 576px){
@@ -33,10 +31,7 @@
    .about-row:nth-child(3) img {
     width: 336px;
     height: 363px;
-}
-
-
-   
+    }
 }
 
 
@@ -45,5 +40,4 @@
         width: 80%;
         height: 70%;
     }
-    
 }
