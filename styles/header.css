@@ -29,8 +29,17 @@
     height: 100%;
     flex-basis: 50%;
     margin-left: auto;
-
 }
+
+#pull{
+    display: none;
+    font-size: 30px;
+}
+
+#pull:active{
+    color: purple;
+}
+
 
 #menu{
     display: flex;
