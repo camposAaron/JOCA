@@ -24,6 +24,18 @@
         bottom: 0;
     }
 
+    #nav-mobile{
+        position: absolute;
+        display: flex;
+        z-index: -1;
+        flex-direction: column;
+        justify-content: center;
+        height: 390px;
+        width: 290px;
+        background: #34386F;
+        
+    }
+
     #hero-image{
         padding-top: 0px;
         padding-bottom: 60px;

@@ -17,17 +17,18 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <script src="js/projects.js"></script>
-  
+
 </head>
 
 <body>
+    <div id="main-container"> </div>
     <header id="header">
         <div>
             <img src="./assets/img/Home/Header/logo + nombre.png">
         </div>
         <nav>
             <ul id="menu">
-                <li  class="menu-item">
+                <li class="menu-item">
                     <a href="index.html">Inicio</a>
                     <div class="animate-countrol"></div>
                 </li>
@@ -52,11 +53,74 @@
                     <div class="animate-countrol"></div>
                 </li>
 
-                <i id="pull" class="fas fa-bars" > </i>
+                <i id="pull" class="fas fa-bars"> </i>
             </ul>
         </nav>
     </header>
     <!--Fin Cabecera-->
+   
+    <!--Menu mobile-->
+    <nav id="nav">
+        <ul id="nav-list">
+            <li class="menu-item">
+                <a href="index.html">Inicio</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="nosotros.html">Nosotros</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#services">Servicios</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="proyectos.html">Proyectos</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#testimony">Testimonios</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#footer">Contactanos</a>
+                <div class="animate-countrol"></div>
+            </li>
+        </ul>
+    </nav>
+    <!--Fin mobile nav bar-->
+
+    <!--Menu mobile-->
+    <nav id="nav">
+        <ul id="nav-list">
+            <li class="menu-item">
+                <a href="index.html">Inicio</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="nosotros.html">Nosotros</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#services">Servicios</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="proyectos.html">Proyectos</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#testimony">Testimonios</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#footer">Contactanos</a>
+                <div class="animate-countrol"></div>
+            </li>
+        </ul>
+    </nav>
+    <!--Fin mobile nav bar-->
+
 
     <!--Fin Cabecera-->
 
@@ -75,7 +139,7 @@
         <section id="project-layout">
 
             <article id="1" class="project-card">
-            
+
                 <p class="project-type">Diseño residencial prediseñado</p>
                 <p class="project-model">Modelo Comfort</p>
                 <button>Ver mas</button>
@@ -97,7 +161,7 @@
                 <p class="project-type">Diseño residencial prediseñado</p>
                 <p class="project-model">Modelo Hera</p>
                 <button>Ver mas</button>
-                <div ></div>
+                <div></div>
                 <img src="assets/img/Proyectos/Modelo-Hera.jpg">
 
             </article>
@@ -113,7 +177,7 @@
             </article>
 
 
-            <article  id="5" class="project-card">
+            <article id="5" class="project-card">
                 <p class="project-type">Diseño residencial prediseñado</>
                 <p class="project-model">Modelo Madroño</p>
                 <button>Ver mas</button>
@@ -122,7 +186,7 @@
 
             </article>
 
-            <article  id="6" class="project-card">
+            <article id="6" class="project-card">
                 <p class="project-type">Diseño residencial prediseñado</p>
                 <p class="project-model">Modelo Spazio</p>
                 <button>Ver mas</button>
@@ -154,9 +218,10 @@
                     <input type="text" maxlength="30" placeholder="Nombre" required pattern="[a-zA-Z ]{2,25}">
                     <input type="text" placeholder="Apellido" required pattern="[a-zA-Z ]{2,25}"><br>
                     <input type="email" placeholder="Email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$">
-                    <input type="text" placeholder="Numero" required pattern = "[0-9]{8}" oninvalid="setCustomValidity('Inserte un numero Valido')"><br>
+                    <input type="text" placeholder="Numero" required pattern="[0-9]{8}"
+                        oninvalid="setCustomValidity('Inserte un numero Valido')"><br>
                     <textarea placeholder="Escribe un comentario(opcional)"></textarea>
-                          
+
                     <input type="submit" value="Enviar">
                 </form>
             </div>

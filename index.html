@@ -12,8 +12,8 @@
     <link rel="stylesheet" type="text/css" href="styles/responsive/header.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive/index.css">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -22,47 +22,77 @@
 
 <body>
     <!--Cabecera-->
-    <div id="Main-container">
-        <header id="header">
-            <div>
-                <img src="./assets/img/Home/Header/logo + nombre.png">
-            </div>
-            <nav>
-                <ul id="menu">
-                    <li class="menu-item">
-                        <a href="index.html">Inicio</a>
-                        <div class="animate-countrol"></div>
-                    </li>
-                    <li class="menu-item">
-                        <a href="nosotros.html">Nosotros</a>
-                        <div class="animate-countrol"></div>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#services">Servicios</a>
-                        <div class="animate-countrol"></div>
-                    </li>
-                    <li class="menu-item">
-                        <a href="proyectos.html">Proyectos</a>
-                        <div class="animate-countrol"></div>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#testimony">Testimonios</a>
-                        <div class="animate-countrol"></div>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#footer">Contactanos</a>
-                        <div class="animate-countrol"></div>
-                    </li>
 
-                    <i id="pull" class="fas fa-bars" > </i>
+    <header id="header">
+        <div>
+            <img src="./assets/img/Home/Header/logo + nombre.png">
+        </div>
+        <nav>
+            <ul id="menu">
+                <li class="menu-item">
+                    <a href="index.html">Inicio</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li class="menu-item">
+                    <a href="nosotros.html">Nosotros</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li class="menu-item">
+                    <a href="#services">Servicios</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li class="menu-item">
+                    <a href="proyectos.html">Proyectos</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li class="menu-item">
+                    <a href="#testimony">Testimonios</a>
+                    <div class="animate-countrol"></div>
+                </li>
+                <li class="menu-item">
+                    <a href="#footer">Contactanos</a>
+                    <div class="animate-countrol"></div>
+                </li>
 
+                <i id="pull" class="fas fa-bars"> </i>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin Cabecera-->
+    <!--Menu mobile-->
+    <nav id="nav">
+        <ul id="nav-list">
+            <li class="menu-item">
+                <a href="index.html">Inicio</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="nosotros.html">Nosotros</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#services">Servicios</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="proyectos.html">Proyectos</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#testimony">Testimonios</a>
+                <div class="animate-countrol"></div>
+            </li>
+            <li class="menu-item">
+                <a href="#footer">Contactanos</a>
+                <div class="animate-countrol"></div>
+            </li>
+        </ul>
+    </nav>
+  <!--Fin mobile nav bar-->
+    
 
-                </ul>
-            </nav>
-        </header>
-        <!--Fin Cabecera-->
-
-        <!--Cuerpo de Pagina-->
+    <!--Cuerpo de Pagina-->
+    <div id="main-container"></div>
         <section>
             <!--Hero Image: cambiar imagen con slider(js) -->
             <div id="hero-image">
@@ -172,10 +202,8 @@
 
                 </div>
 
-    </div>
-
-    </section>
-    <!--Fin Testimonios-->
+            </section>
+            <!--Fin Testimonios-->
     </section>
     <!--fin cuerpo-->
 
@@ -189,10 +217,12 @@
 
                     <input type="text" maxlength="30" placeholder="Nombre" required pattern="[a-zA-Z ]{2,25}">
                     <input type="text" placeholder="Apellido" required pattern="[a-zA-Z ]{2,25}"><br>
-                    <input type="email" placeholder="Email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"  oninvalid="setCustomValidity('Inserte su email')">
-                    <input type="text" placeholder="Numero" required pattern = "[0-9]{8}" oninvalid="setCustomValidity('Inserte un numero Valido')"><br>
+                    <input type="email" placeholder="Email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                        oninvalid="setCustomValidity('Inserte su email')">
+                    <input type="text" placeholder="Numero" required pattern="[0-9]{8}"
+                        oninvalid="setCustomValidity('Inserte un numero Valido')"><br>
                     <textarea placeholder="Escribe un comentario(opcional)"></textarea>
-                          
+
                     <input type="submit" value="Enviar">
                 </form>
             </div>
@@ -247,7 +277,6 @@
             &copy;Copyright 2021 designed by Josué Campos
         </div>
     </footer>
-    </div>
     <script src="js/scroll.js"></script>
     <script src="https://kit.fontawesome.com/d4313e3373.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
