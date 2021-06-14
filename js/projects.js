@@ -1,19 +1,14 @@
 window.addEventListener('load',()=>{
+   
     var cards = document.querySelectorAll('.project-card')
     let header = document.querySelector('#header')
     header.classList.add('fixed')
    
-    
-    
-
-
-
     cards.forEach((card, id) => {
         
         card.addEventListener('click', (e)=>{
             let selectedCardId = e.currentTarget.getAttribute('id');
             localStorage.setItem('id',selectedCardId)
-            console.log(selectedCardId)
             window.location.href = "detalle-proyecto.html"
         })
         
