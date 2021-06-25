@@ -3,7 +3,9 @@
 footer{
     width: 100%;
     background: rgba(22, 25, 62, 0.9);
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 100px);
+    height: auto;
+    
 }
 
 .footer-title{
@@ -15,50 +17,22 @@ footer{
     text-align: center;
 }
 
-#footer-layout{
-    display: flex;
-    width: 100%;
-    flex-flow: row wrap;
-    font-family: 'Montserrat',sans-serif;
-    box-sizing: border-box;
-    padding: 30px;
-    height: 90%;
-}
-
-#contact-layout{
-    display: flex;
-    flex-flow: column;
-    width: 38%;
-}
-
-
-#contact-form{
-    display: flex;
-    flex-flow: row wrap;
-    flex-grow: 1;
-    text-align: center;
-    width: 100%;
-    padding-right: 10px;
-    box-sizing: border-box;
-    margin-top: 60px;
-}
 
 #contact-form  input[type="text"],
 #contact-form  input[type="email"]{
-    width: 47%;
+    width: 49%;
     height: 40px;
     background: #FFFFFF;
     color: #34386F;
     border: 1px solid #929292;
-    box-sizing: border-box;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
     padding-left: 10px;
-    margin-left: 10px;
+    border-radius: 8px;
     border: none;
     box-sizing: border-box;
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
+    margin-top:10px;
 }
 
 
@@ -73,8 +47,7 @@ textarea:focus
 }
 
 #contact-form textarea{
-    width: 95%;
-    margin-left: 10px;
+   width: 100%;
     color:#34386F;
     border-radius: 8px;
     border: 1px solid #929292;
@@ -87,6 +60,8 @@ textarea:focus
     font-size: 14px;
     overflow: scroll;
     resize: none;
+    margin-top: 10px;
+    height: 150px;
 }
 
 
@@ -124,31 +99,12 @@ textarea::placeholder
 }
 
 
-#where-layout{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    flex-grow: 1;
-    width: 60%;
-    
-}
 
 
 
-#where-sublayout{
-    display: flex;
-    margin-top: 60px;
-    flex-direction: row;
-}
 
-#info{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 50%;
-}
+
+
 
 #social span{
     cursor: pointer;
@@ -197,7 +153,7 @@ footer hr{
 }
 
 #copy{
-    margin-top: 10px;
+    margin-top:80px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;

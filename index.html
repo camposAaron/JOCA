@@ -1,288 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOCA construcciones</title>
+
+
+    <!--Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive/header.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive/footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive/index.css">
-    <!--Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <!--Cabecera-->
-
-    <header id="header">
-        <div>
-            <img src="./assets/img/Home/Header/logo + nombre.png">
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/Home/Header/logo + nombre.png" alt="" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Inicio</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="nosotros.html">Nosotros</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#services">Servicios</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li class="menu-item navbar-item">
+                        <a class="nav-link " href="proyectos.html">Proyectos</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li class="menu-item navbar-item">
+                        <a class="nav-link " href="#testimony">Testimonios</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                    <li class="menu-item navbar-item">
+                        <a class="nav-link " href="#footer">Contactanos</a>
+                        <div class="animate-countrol"></div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul id="menu">
-                <li class="menu-item">
-                    <a href="index.html">Inicio</a>
-                    <div class="animate-countrol"></div>
-                </li>
-                <li class="menu-item">
-                    <a href="nosotros.html">Nosotros</a>
-                    <div class="animate-countrol"></div>
-                </li>
-                <li class="menu-item">
-                    <a href="#services">Servicios</a>
-                    <div class="animate-countrol"></div>
-                </li>
-                <li class="menu-item">
-                    <a href="proyectos.html">Proyectos</a>
-                    <div class="animate-countrol"></div>
-                </li>
-                <li class="menu-item">
-                    <a href="#testimony">Testimonios</a>
-                    <div class="animate-countrol"></div>
-                </li>
-                <li class="menu-item">
-                    <a href="#footer">Contactanos</a>
-                    <div class="animate-countrol"></div>
-                </li>
-
-                <i id="pull" class="fas fa-bars"> </i>
-            </ul>
-        </nav>
+    </nav>
     </header>
     <!--Fin Cabecera-->
-    <!--Menu mobile-->
-    <nav id="nav">
-        <ul id="nav-list">
-            <li class="menu-item">
-                <a href="index.html">Inicio</a>
-                <div class="animate-countrol"></div>
-            </li>
-            <li class="menu-item">
-                <a href="nosotros.html">Nosotros</a>
-                <div class="animate-countrol"></div>
-            </li>
-            <li class="menu-item">
-                <a href="#services">Servicios</a>
-                <div class="animate-countrol"></div>
-            </li>
-            <li class="menu-item">
-                <a href="proyectos.html">Proyectos</a>
-                <div class="animate-countrol"></div>
-            </li>
-            <li class="menu-item">
-                <a href="#testimony">Testimonios</a>
-                <div class="animate-countrol"></div>
-            </li>
-            <li class="menu-item">
-                <a href="#footer">Contactanos</a>
-                <div class="animate-countrol"></div>
-            </li>
-        </ul>
-    </nav>
-  <!--Fin mobile nav bar-->
-    
+
 
     <!--Cuerpo de Pagina-->
     <div id="main-container"></div>
-        <section>
-            <!--Hero Image: cambiar imagen con slider(js) -->
-            <div id="hero-image">
-                <div id="hero-inside">
-                    <img id="logo" src="assets/img/Home/Header/LOGO.png">
-                    <div>
-                        <h1>JOCA CONSTRUCCIONES</h1>
-                        <P>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eum eos porro dolores
-                            placeat
-                            nihil vitae quia! Dolores facilis accusamus, ea molestias, vel aspernatur nobis cupiditate
-                            similique, culpa nemo voluptatem?
-                        </P>
-                    </div>
+    <section class="container-fluid" style="padding-left: 0px; padding-right: 0px; padding-top: 90px;">
+        <!--Hero Image: cambiar imagen con slider(js) -->
+        <div id="hero-image">
+            <div id="hero-inside">
+                <img id="logo" src="assets/img/Home/Header/LOGO.png">
+                <div>
+                    <h1>JOCA CONSTRUCCIONES</h1>
+                    <P>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eum eos porro dolores
+                        placeat
+                        nihil vitae quia! Dolores facilis accusamus, ea molestias, vel aspernatur nobis cupiditate
+                        similique, culpa nemo voluptatem?
+                    </P>
                 </div>
             </div>
-            <!--Fin Hero Image-->
+        </div>
+        <!--Fin Hero Image-->
 
-            <!--Servicios-->
-            <section id="services">
+        <!--Servicios-->
+        <section id="services" class="container-fluid">
 
-                <div class="title">
+            <div class="title row justify-content-center">
+                <div class="col-8 mt-3">
                     <h1>Nuestros Servicios</h1>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor cupiditate impedit officia
                         perferendis.
                     </p>
                 </div>
+            </div>
 
-                <!--Inicio de tarjetas de articulos-->
-                <div id="service-layout">
-                    <article class="service-card">
-                        <img src="assets/img/Home/service/icon1.png">
-                        <h3>Diseño y construccion residencial</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea reiciendis placeat
-                            itaque
+            <!--Inicio de tarjetas de articulos-->
+            <div id="service-layout" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                        <article class="service-card card align-items-center p-3 mt-2">
+                            <img src="assets/img/Home/service/icon1.png" class="card-img-top">
+                            <h3 class="card-title">Diseño y construccion residencial</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea reiciendis
+                                placeat
+                                itaque
 
-                        </p>
-                    </article>
+                            </p>
+                        </article>
+                    </div>
 
-                    <article class="service-card">
-                        <img src="assets/img/Home/service/icon.png">
-                        <h3>Diseño y construccion Comercial</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea reiciendis placeat
-                            itaque.
-                        </p>
-                    </article>
+                    <div class="col-sm">
+                        <article class="service-card card align-items-center p-3 mt-2">
+                            <img src="assets/img/Home/service/icon.png" class="card-img-top">
+                            <h3 class="card-title">Diseño y construccion Comercial</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea reiciendis
+                                placeat
+                                itaque.
+                            </p>
+                        </article>
+                    </div>
 
-                    <article class="service-card">
-                        <img src="assets/img/Home/service/icon2.png">
-                        <h3>Consultorias</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea reiciendis placeat
-                            itaque
+                    <div class="col-sm">
+                        <article class="service-card card align-items-center p-3 mt-2">
+                            <img src="assets/img/Home/service/icon2.png" class="card-img-top">
+                            <h3 class="card-title">Consultorias</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ea reiciendis
+                                placeat
+                                itaque
 
-                        </p>
-                    </article>
+                            </p>
+                        </article>
+                    </div>
+
                 </div>
-                <!--Fin tarjetas de articulos-->
-            </section>
-            <!--Fin servicios-->
+            </div>
+            <!--Fin tarjetas de articulos-->
+        </section>
+        <!--Fin servicios-->
 
-            <!--Testimonios-->
-            <section id="testimony">
+        <!--Testimonios-->
+        <section id="testimony" class="container-fluid">
 
-                <div class="title">
+            <div class="title row justify-content-center">
+                <div class="col-8 mt-3">
                     <h1>Testimonios</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor cupiditate impedit officia
                         perferendis.</p>
                 </div>
+            </div>
 
-                <div id="testimony-layout">
+            <div id="testimony-layout" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="testimony-card card align-items-center p-3 mt-2">
+                            <img src="assets/img/Home/Testimonios/Margarita Gonzalez.jpg" class="card-img-top"
+                                width="200" height="200">
+                            <p class="card-text">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquam elit nibh
+                                sociis
+                                venenatis a ultrices tincidunt.”
+                            </p>
 
-                    <div class="testimony-card" class="splide__slide">
-                        <img src="assets/img/Home/Testimonios/Margarita Gonzalez.jpg" width="200" height="200">
-                        <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquam elit nibh
-                            sociis
-                            venenatis a ultrices tincidunt.”
-                        </p>
-
-                        <h3>Margarita Gonzalez</h3>
+                            <h3 class="card-title fs-5">Margarita Gonzalez</h3>
+                        </div>
                     </div>
 
-                    <div class="testimony-card">
-                        <img src="assets/img/Home/Testimonios/Pedro Sanchez.jpg" width="200" height="200">
-                        <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquam elit nibh
-                            sociis
-                            venenatis a ultrices tincidunt.”
-                        </p>
+                    <div class="col-sm">
+                        <div class="testimony-card card align-items-center p-3 mt-2">
+                            <img src="assets/img/Home/Testimonios/Pedro Sanchez.jpg" class="card-img-top" width="200"
+                                height="200">
+                            <p class="card-text">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquam elit nibh
+                                sociis
+                                venenatis a ultrices tincidunt.”
+                            </p>
 
-                        <h3>Pedro Sanchez</h3>
+                            <h3 class="card-title fs-5">Pedro Sanchez</h3>
+                        </div>
+
                     </div>
 
-                    <div class="testimony-card" class="splide__slide">
-                        <img src="assets/img/Home/Testimonios/Sofia Ortega.jpg" width="200" height="200">
-                        <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquam elit nibh
-                            sociis
-                            venenatis a ultrices tincidunt.”
-                        </p>
-                        <h3>Sofia Ortega</h3>
+                    <div class="col-sm">
+                        <div class="testimony-card card align-items-center p-3 mt-2">
+                            <img src="assets/img/Home/Testimonios/Sofia Ortega.jpg" class="card-img-top" width="200"
+                                height="200">
+                            <p class="card-text">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquam elit nibh
+                                sociis
+                                venenatis a ultrices tincidunt.”
+                            </p>
+                            <h3 class="card-title fs-5">Sofia Ortega</h3>
+                        </div>
                     </div>
-
                 </div>
+            </div>
 
-            </section>
-            <!--Fin Testimonios-->
+        </section>
+        <!--Fin Testimonios-->
     </section>
     <!--fin cuerpo-->
 
 
     <footer id="footer">
-        <section id="footer-layout">
-            <!--Formulario de contacto-->
-            <div id="contact-layout">
-                <h1 class="footer-title">Escríbenos</h1>
-                <form id="contact-form" method="POST" onsubmit="">
-
-                    <input type="text" maxlength="30" placeholder="Nombre" required pattern="[a-zA-Z ]{2,25}">
-                    <input type="text" placeholder="Apellido" required pattern="[a-zA-Z ]{2,25}"><br>
-                    <input type="email" placeholder="Email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
-                        oninvalid="setCustomValidity('Inserte su email')">
-                    <input type="text" placeholder="Numero" required pattern="[0-9]{8}"
-                        oninvalid="setCustomValidity('Inserte un numero Valido')"><br>
-                    <textarea placeholder="Escribe un comentario(opcional)"></textarea>
-
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-            <!--Fin formulario de contacto-->
-
-            <!--Donde estamos-->
-            <div id="where-layout">
-                <h1 class="footer-title">¿Dónde Estamos?</h1>
-
-                <div id="where-sublayout">
-                    <div id="info">
-                        <div id="social">
-                            <span><img src="assets/img/contactanos/facebook.png"></span>
-                            <span><img src="assets/img/contactanos/Whatsapp.png"></span>
+        <section id="footer-layout" class="container-fluid">
+            <div class="row">
+                <!--Formulario de contacto-->
+                <div id="contact-layout" class="col-sm-5 mt-5">
+                    <h1 class="footer-title">Escríbenos</h1>
+                    <form id="contact-form" method="POST" onsubmit="" class="container mt-3">
+                    
+                        <input class="col-sm-4" type="text" maxlength="30" placeholder="Nombre" required pattern="[a-zA-Z ]{2,25}">
+                        <input class="col-sm-4" type="text" placeholder="Apellido" required pattern="[a-zA-Z ]{2,25}">
+                    
+                        <input type="email" placeholder="Email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                            oninvalid="setCustomValidity('Inserte su email')">
+                        <input type="text" placeholder="Numero" required pattern="[0-9]{8}"
+                            oninvalid="setCustomValidity('Inserte un numero Valido')">
+                        <textarea placeholder="Escribe un comentario(opcional)" ></textarea>
+                        <div class="row mt-3">
+                            <input class="justify-content-center" type="submit" value="Enviar">
                         </div>
+                      
+                    </form>
+                </div>
+                <!--Fin formulario de contacto-->
 
-                        <div class="info-detail">
-                            <span><strong>Dirección</strong></span>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odit
-                                maiores.
-                            </p>
-                        </div>
+                <!--Donde estamos-->
+                <div id="where-layout" class="col-sm-7 mt-5">
+                    <h1 class="footer-title ">¿Dónde Estamos?</h1>
+                    <div id="where-sublayout" class="mt-3">
+                        <div class="row">
+                            <div id="info" class="col-sm">
+                                <div id="social">
+                                    <span><img src="assets/img/contactanos/facebook.png"></span>
+                                    <span><img src="assets/img/contactanos/Whatsapp.png"></span>
+                                </div>
 
-                        <div class="info-detail">
-                            <span><strong>Telf</strong></span>
-                            <p>
-                                +505 22534103
-                            </p>
-                        </div>
+                                <div class="info-detail">
+                                    <span><strong>Dirección</strong></span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odit
+                                        maiores.
+                                    </p>
+                                </div>
 
-                        <div class="info-detail">
-                            <span><strong>Email</strong></span>
-                            <p>
-                                joca_sa@joca.com.ni
-                            </p>
+                                <div class="info-detail">
+                                    <span><strong>Telf</strong></span>
+                                    <p>
+                                        +505 22534103
+                                    </p>
+                                </div>
+
+                                <div class="info-detail">
+                                    <span><strong>Email</strong></span>
+                                    <p>
+                                        joca_sa@joca.com.ni
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div id="map" class="col-auto">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7801.899863026869!2d-86.20643377758988!3d12.115578365685895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe93be608f75%3A0xedb98198e81c4061!2sVilla%20Libertad%2C%20Managua!5e0!3m2!1ses-419!2sni!4v1619753031832!5m2!1ses-419!2sni"
+                                    width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
                         </div>
                     </div>
-
-
-                    <div id="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7801.899863026869!2d-86.20643377758988!3d12.115578365685895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe93be608f75%3A0xedb98198e81c4061!2sVilla%20Libertad%2C%20Managua!5e0!3m2!1ses-419!2sni!4v1619753031832!5m2!1ses-419!2sni"
-                            width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-
                 </div>
             </div>
         </section>
-        <hr>
-        <div id="copy">
-            &copy;Copyright 2021 designed by Josué Campos
+       
+
+        <div id="copy" class="row mt5">
+            <hr>
+            <span class="justify-content-center">&copy;Copyright 2021 designed by Josué Campos</span>
         </div>
     </footer>
     <script src="js/scroll.js"></script>
     <script src="https://kit.fontawes   ome.com/d4313e3373.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>

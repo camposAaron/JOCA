@@ -22,7 +22,7 @@
 }
 
 #hero-inside{
-    margin-top: 80px;
+
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -40,6 +40,7 @@
 #hero-inside div h1{
     color: #E8E8E8;
     font-weight: 700;
+    font-size: 32px;
     text-align: center;
     margin-top: 10px;
 }
@@ -54,26 +55,19 @@
 
 
 /*Servicios*/
+
 #services{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: calc(100vh - 60px);
     font-family: 'Montserrat',sans-serif;
+    min-height: calc(100vh - 90px);
+    height: auto;
 }
 
-.title{
-     display: flex;
-     flex-flow: column nowrap;
-     width: 50%;
-     text-align: center;
-     margin: 0px auto;
-     margin-top: 40px;
-}
+
 
 .title h1{
     color: rgba(22, 25, 62, 0.9);
     font-size: 32px;
+    text-align: center;
 }
 
 .title p{
@@ -81,7 +75,46 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
 }
+.card{
+    background: linear-gradient(180deg, #FFFFFF 0%, #E8E8E8 100%);
+    border-radius: 18px;
+    padding: 10px;
+    box-sizing: content-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    height: 330px;
+}
+
+.card-img-top{
+    width: 79px;
+    height: 79px;
+    margin-top: 30px;
+}
+
+.card-title{
+    color:rgba(52, 56, 111, 1); 
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-text{
+   text-align: center;
+   margin-top: 10px;
+}
+
+/* #services{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 60px);
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+
+
+
 
  #service-layout{
    display: flex;
@@ -113,19 +146,38 @@
      margin-top: 30px;
  }
 
- .service-card h3{
-     color:rgba(52, 56, 111, 1); 
-     text-align: center;
-     margin-top: 15px;
- }
 
- .service-card p{
-    text-align: center;
-    margin-top: 10px;
- }
+ } */
+
+
 
  /*Testimonios*/
+ #testimony{
+  
+    background: #CED7E7;
+    font-family: 'Montserrat',sans-serif;
+    min-height: calc(100vh - 90px);
+    height: auto;
+ }
 
+ .testimony-card{
+ 
+    background: rgba( 244, 238, 238, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 18px;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+.testimony-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+} 
+
+/* 
  #testimony{
     display: flex;
     flex-direction: column;
@@ -145,7 +197,7 @@
 }
 
 /*cartas de los testimonios*/
-
+/*
 .testimony-card{
     display: flex;
     width: 30%;
@@ -165,9 +217,9 @@
     width: 200px;
     height: 200px;
     border-radius: 999px;
-}
+} */
 
-.testimony-card p{
+/* .testimony-card p{
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -180,7 +232,7 @@
    text-align: center;
    color: rgba(52, 56, 111, 1);
 }
-
+ */
 
 
 
