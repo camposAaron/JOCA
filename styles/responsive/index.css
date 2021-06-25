@@ -1,51 +1,32 @@
-@media(max-width : 1200px){
-    .service-card{
-       width: 30%;
-    }
- 
-}
-
 @media(max-width : 768px){
+
     #hero-inside{
-        margin-top: 0px;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #services{
-        height: auto;
-        padding-bottom: 60px;
+        width: 80%;
     }
 
-  
-    #service-layout{
-        margin-top: 30px;
-        width: 85%;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .service-card{
-       margin-top: 25px;
-        height: 310px;
+    #hero-inside div h1{
+        font-size: 24px;
         width: 100%;
+    }
+
+    #services{
+        padding-bottom: 60px;
     }
 
     #testimony{
-        height: auto;
         padding-bottom: 60px;
     }
      
-    #testimony-layout{ 
-        flex-direction: column;
-        width: 85%;
-        margin-top: 30px;
+}
+
+@media(max-width : 450px){
+    #hero-inside #logo{
+        width:  70%;
+        height:  60%;
     }
 
-    .testimony-card{
-        display: flex;
+    #hero-inside div h1{
+        font-size: 18px;
         width: 100%;
-        margin-top: 25px;
     }
-    
 }

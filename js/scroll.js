@@ -2,27 +2,9 @@
 let header = document.querySelector('#header')
 
 
-//Hamburguer button
-const hamburguer = document.querySelector('#pull')
-const main = document.querySelector('#main-container')
-
-hamburguer.addEventListener('click', ()=> {
-    const item = document.querySelector('#nav')
-    
-    if(item.style.zIndex == '3'){
-        item.style.display =' none'
-        item.style.zIndex = '-1' 
-        main.style.display = 'none'
-        main.style.background = 'rgba(102, 102, 102, 0.95);'
-    }else{
-        item.style.display ='block'
-        item.style.zIndex = '3' 
-        main.style.display = 'block'
-    }   
-})
 
 //desplazamiento de scroll y logica de menu de navegacion
-let buttons = document.querySelectorAll('#menu a');
+let buttons = document.querySelectorAll('.navbar-nav a');
 
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
