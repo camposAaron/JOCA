@@ -44,8 +44,8 @@ buttons.forEach((button) => {
                     break;
             }
         } catch (err) {
-            console.log(err)
-        }
+             console.log(err)
+                }   
     });
 });
 

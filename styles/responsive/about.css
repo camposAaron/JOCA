@@ -1,16 +1,5 @@
 @media(max-width: 768px){
-    #about_page #wave{
-        padding-top: 0px;
-    }
-
-    .about-desc{
-        width: 80%;
-        margin-top: 20px;
-    }
-
-    .about-row:nth-child(2) img {
-        order: 0;
-    }
+  
 
     .about-desc p {
         font-weight: 400;
@@ -23,10 +12,7 @@
 }
 
 @media(max-width: 576px){
-   .about-row img{
-       width: 90%;
-       height: 80%;
-   }
+
 
    .about-row:nth-child(3) img {
     width: 336px;
