@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'JOCA'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2751B706246C4BFCB479FF7CB6DAE00F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_07DA20FC8601405F801143C109588EB7 }}
           package: .
